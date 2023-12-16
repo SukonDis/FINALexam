@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height: 1030px;
+  font-size: 18px;
+  background-color: rgb(43, 43, 43);
+}
+p{
+  margin: 20px;
+}
+
+/* This is the CSS responsible for the logo */
+.logo{
+  position: relative;
+  left: 46%;
+  top: 5px;
+}
+
+
+
+/* Start of CSS for dropdown menu  */
+
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+    width: 100%;
+    height: 100px;
+  background: #da2692;
+  z-index: 2;
+}
+
+.menu{
+  color: #000000;
+  position: relative;
+  top: 60px;
+  right: 20px;
+}
+
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.dropdown:hover .Dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 5px;
+  padding-top: 60px;
+  z-index: 1; 
+  position: absolute;     
+  top: -25px;
+  left: -30px;
+
+}
+
+.Dropdown-menu {                    
+  display: none;
+  z-index: 1;
+}
+
+.Dropdown-menu li {
+  list-style: none;
+  border-bottom: 1px solid black  ;
+  padding: 0 40px 10px 20px;
+  margin: 10px;
+}
+
+.Dropdown-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > span {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+/* End of CSS for dropdown menu  */
+
+.content-container {
+  padding-top: 10px;
+  padding-bottom: 20%;
+  align-content: center;
+  display: flex;
+  width: auto;
+  height: auto;
+  z-index: 2;
+}
+
+.article-image {
+  position: static;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  display: block;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  background-color:#FFA500;
+  color: rgb(0, 0, 0);
+}
+
+.return{
+  position: fixed;
+  bottom: 0%;
+  right: 40%;
+}
+
+.sp{
+
+  height: 15%;
+  background:#FFA500;
+  color: white;
+  text-align: center;
+  justify-content: baseline;
+}
+
+.sample {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: auto;
+  margin: auto; 
+  padding-bottom: 100px;
+}
+
+.column {
+  position: static;
+  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 10px;
+  height: 10px;
+  background-color: #b47500;
+}
+.column-p{
+  line-height: 20px;
+}
+
+.column img {
+  height: 100px;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.column img:hover {
+  transform: scale(1.8);
+}
+
+.add{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.login-container {
+  background-color: #936002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  line-height: 150%;
+  overflow: hidden;
+}
+form{
+  width: auto;
+  height: auto;
+}
+.Login {
+  position: static;
+  top: 30%;
+  font-size: 14px ;
+  padding: 40px;
+  margin: auto;
+  width: 30%;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: beige;
+}
+
+/* This part of the CSS is responsible for the signup page P.s I still don't understand forms CSS, but I'll use it next time.  */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Signup{
+  display: flex;
+  padding: 20px;
+  width: 30%;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: beige;
+}
+
+/*This part of the CSS is for the Produtcs page*/
+.Products {
+  line-height: 45px;/*This is the spacing between the image and the text within the products div*/
+  display: flex;
+  float: inline-start;/*I used this to make a grid for the products*/
+  flex-direction: column;
+  align-items: center;
+  width: 31%;
+  margin: 10px;
+  height: 300px;
+  background-color:#FFA500; ;
+}
+
+.pList{/*This is the CSS for the PARENT to Product(CHILD) */
+  background-color:  #b47500;
+  color: #0b0b0b;
+  padding: 10%;
+  margin: 0;
+  position: relative;
+  top: 8%;
+}
+.pList h3{
+  color: #ffffff;
+}
+
+.priceRange{
+  line-height: 0.5;
+}
+.priceRange{
+  position: absolute;
+  top: 50%;
+  position: static;
+  margin: auto;
+}
+/*This block of code is responsible for the hover effect on the product images*/
+.Products img {
+  width: 200px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+.Products img:hover {
+  transform: scale(1.8);
+}
+/*This CSS is responsible for the footer*/
+.footer{
+  width: 100%;
+  height: 10%;
+  background-color: #000000;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  z-index: 2;
+}
+.footer button{
+  height: auto;
+  width: auto;
+  position:static;
+  margin: 10px;
+  padding: 5px;
+  z-index: 2;
+}
+
+/*This CSS code is responsible for the About Us page and its content*/
+.about{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.companyContacts{
+  background-color: #a1a0a0;
+  color: rgb(1, 1, 1);
+
+}
+
+.companyContacts img{
+  border: solid black;
+  background-color: #ffffff;
+  position: relative;
+  left: 1.5%;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+}
+
+/*This block of code is responsible for the Privacy and Policy page and its content*/
+.Pvp {
+  padding: 40px;
+  margin: 10px;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+}
+
+.pvp-head{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.pvp-head button {
+  padding: 30px;
+  margin: 30px;
+}
+
+/*Css for button styling*/
+button {
+  font-size: 12px;
+  height: fit-content;
+  width: fit-content;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  background-color:#FFA500;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #936002;
+}
+
+
+button:active {
+  background-color:  #b47500;
+}
+
+/* This part of the CSS is responsible for the website's appearance when viewed from a mobile device */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 12px; 
+  }
+
+  .logo{
+    position: relative;
+    top: 0;
+    left: 0 ;
+  }
+
+  .container {
+    height: auto; 
+  }
+
+  .menu {
+    top: 50px;
+    right: 10px; 
+  }
+
+  .content-container {
+    padding-top: 40px; 
+  }
+
+  .article-image {
+    float: none; 
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+
+  .content {
+    position: static; 
+    top: auto; 
+    width: 100%; 
+  }
+
+  .return {
+    position: absolute;
+    bottom: 22%;
+    right:30%;
+  }
+
+  .sp {
+    height: auto; 
+    padding: 20px; 
+  }
+
+  .sample {
+    flex-direction: column; 
+    padding-bottom: 50px; 
+  }
+
+  .column {
+    width: 100%; 
+    height: 30%;
+    margin: 10px 0; 
+    gap: 5px;
+  }
+
+  .footer{
+    height: 60px;
+  }
+
+  .add {
+    margin-bottom: 20px; 
+    padding-bottom: 20px; 
+  }
+
+  .Products {
+    width: 100%; 
+    margin: 10px 0; 
+  }
+
+  .pList {
+    padding: 5%; 
+  }
+
+  .priceRange {
+    position: static; 
+    top: auto; 
+    margin: auto; 
+  }
+  
+  .Login{
+    line-height: 400%;
+    position: absolute;
+    top: 20px;
+    font-size: smaller;
+    width: fit-content;
+  }
+  
+.Pvp{
+  width: auto;
+}
+
+  }

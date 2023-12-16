@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Schedule for appointment</title>
+</head>
+
+<body>
+  <h4> Hi there! In this page you can set up an appointment for your Furbaby's vaccination shots
+    and our ever so popular grooming plans.</h4>
+<div class="Os">
+  <form>
+    <fieldset>
+      <legend>Set Schedule For apointment</legend>
+        <label for="Service">Choose a service:</label>
+        <select id="Service" name="Service">
+          <option value="Pet Grooming1">Pet Grooming (Full-course)</option>
+          <option value="Pet Grooming2">Pet Grooming (Trim only / hair and nails)</option>
+          <option value="Pet Grooming3">Pet Grooming (Bath only / optional tooth brushing)</option>
+          <option value="Vaccinations">Vaccinations (Put vaccine/s name here)</option>
+        </select><br><br>
+
+        <label for="Time">Choose a time for the appointment:</label>
+        <input type="datetime-local">
+        <br>
+        <p>Things / important information we should know beforehand: </p>
+        <textarea name="things" rows="10" cols="40"
+          placeholder="Underlying conditions, tendencies, vaccination history, etc."></textarea><br><br>
+
+        <a href="tek.jpg">
+          <button>Submit</button>
+        </a>
+    </fieldset>
+  </form>
+</div>
+  <a href="index.html">
+    <br><button>RETURN TO MAIN PAGE</button><!--This returns user to the main page(index.html)-->  </a>
+</body>
+
+</html>
